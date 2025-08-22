@@ -1,0 +1,12 @@
+# Ignore trained models
+models.py
+*.pkl
+*.joblib
+*.sav
+*.h5
+*.hdf5
+*.pt
+*.pth
+
+/models/
+*/models/

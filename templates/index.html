@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProteinAI - Deep Learning Platform</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="static/dna-svgrepo-com.svg" alt="DNA Icon" width="30" height="30" />
+                    </div>
+                    
+                    <div class="logo-text">
+                        <h1>ProteinAI</h1>
+                        <p>Deep Learning Platform</p>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="#analysis">Analysis</a>
+                    <a href="#models">Models</a>
+                    <a href="#datasets">Datasets</a>
+                    <span class="badge">2025 CS304 Introduction to Bioinformatics</span>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-title">
+                <div class="logo-icon">
+                    <img src="static/dna-svgrepo-com.svg" alt="DNA Icon" width="30" height="30" />
+                </div>
+                <h1>Protein<span class="gradient-text">AI</span></h1>
+                <div class="logo-icon" style="animation-delay: 1s;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                        <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/>
+                    </svg>
+                </div>
+            </div>
+            <p class="hero-description">
+                Advanced deep learning platform for protein structure prediction, function analysis, and molecular insights
+            </p>
+            <div class="hero-badges">
+                <div class="hero-badge badge-cyan">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="1"/>
+                        <path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/>
+                        <path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/>
+                    </svg>
+                    3D Structure Prediction
+                </div>
+                <div class="hero-badge badge-blue">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                    </svg>
+                    Neural Networks
+                </div>
+                <div class="hero-badge badge-purple">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+                    </svg>
+                    Real-time Analysis
+                </div>
+                
+                
+            </div>
+                <p class="author-note">
+                    1101327 柯翔崴, 1101444 徐英豈, 1101445 楊子枋, 1111408 陳可薰, 1101408 張鈞閔
+                </p>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="container">
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value stat-cyan">94.6%</div>
+                <div class="stat-label">F1 score</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value stat-blue">3K+</div>
+                <div class="stat-label">Proteins Analyzed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value stat-purple">&lt;30s</div>
+                <div class="stat-label">Average Analysis Time</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Interface -->
+    <section class="container">
+        <div class="main-content">
+            <!-- Model Selector -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                        </svg>
+                        Deep Learning Models
+                    </div>
+                    <div class="card-description">Select a pre-trained model for protein analysis</div>
+                </div>
+                <select id="modelSelect" class="select">
+                    <option value="">Choose a model...</option>
+                    <option value="svm">SVM</option>
+                    <option value="knn">KNN</option>
+                    <option value="mCNN">mCNN</option>
+                    <option value="CNN">CNN</option>
+                </select>
+                <div id="modelInfo" class="model-info">
+                    <div id="modelDetails"></div>
+                </div>
+            </div>
+
+            <!-- Protein Viewer -->
+            <div class="card protein-viewer">
+                <div class="card-header">
+                    <div class="card-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="1"/>
+                            <path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/>
+                        </svg>
+                        3D Structure Viewer
+                    </div>
+                </div>
+                <div id="viewerContainer">
+                    <div class="viewer-placeholder">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #06b6d4; opacity: 0.5;">
+                            <circle cx="12" cy="12" r="1"/>
+                            <path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/>
+                        </svg>
+                        <div>Submit a protein sequence to view 3D structure</div>
+                    </div>
+                    <div class="legend">
+                        <div><span style="color: #ef4444;">●</span> 鹼性（R, K, H）</div>
+                        <div><span style="color: #f59e0b;">●</span> 酸性（D, E）</div>
+                        <div><span style="color: #8b5cf6;">●</span> 芳香族（F, W, Y, H）</div>
+                        <div><span style="color: #10b981;">●</span> 疏水性（A, I, L, M, V, F）</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Sequence Input -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 12l2 2 4-4"/>
+                        <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+                        <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+                    </svg>
+                    Protein Sequence Input
+                </div>
+                <div class="card-description">Enter a protein sequence using single-letter amino acid codes</div>
+            </div>
+            <textarea id="sequenceInput" class="textarea" placeholder="MKLLILTCLVAVALARPKHPIKHQGLPQEVLNENLLRFFVAPFPEVFGKEKVNEL..."></textarea>
+            <button class="button-secondary" onclick="loadExample()">Load Example</button>
+            <button class="button-secondary" onclick="loadExample2()">Load Example2</button>
+            <div id="sequenceInfo" style="margin: 8px 0; font-size: 14px; color: #9ca3af;"></div>
+            <button id="analyzeBtn" class="button" onclick="analyzeSequence()" disabled>Analyze Sequence</button>
+        </div>
+
+        <!-- Results Dashboard -->
+        <div id="results" class="results">
+            <div class="card results-summary">
+                <div class="card-header">
+                    <div class="card-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <path d="M12 17h.01"/>
+                        </svg>
+                        Prediction Results
+                    </div>
+                    <div class="card-description">Analysis results from <span id="resultModelName"></span></div>
+                </div>
+                <div class="metrics">
+                    <div class="metric" style="display: none;">
+                        <div class="metric-header">
+                            <span class="metric-label">Accuracy</span>
+                            <span class="badge badge-cyan">High</span>
+                        </div>
+                        <div class="metric-value" id="accuracy">--</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="accuracyProgress"></div>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-header">
+                            <span class="metric-label">RESULT</span>
+                        </div>
+                        <div class="metric-value" id="predict" style="font-size: 18px;">--</div>
+                        <div class="metric-value" id="functionalClass" style="font-size: 18px; display: none;">--</div>
+                    </div>
+                    <div class="metric" style="display: none;">
+                        <div class="metric-header">
+                            <span class="metric-label">Confidence Score</span>
+                        </div>
+                        <div class="metric-value" id="confidenceScore">--</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="confidenceProgress"></div>
+                        </div>
+                    </div>
+                    <div class="metric" style="display: none;">
+                        <div class="metric-header">
+                            <span class="metric-label">Inference Time</span>
+                        </div>
+                        <div class="metric-value" id="inferenceTime">--</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="inferenceTimeProgress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Amino Acid Composition</div>
+                    <div class="card-description">Distribution of amino acids in the sequence</div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="compositionChart"></canvas>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Secondary Structure</div>
+                    <div class="card-description">Predicted secondary structure elements</div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="structureChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 ProteinAI - Advanced Protein Analysis Platform</p>
+            <p style="font-size: 14px; margin-top: 8px;">Powered by state-of-the-art deep learning models</p>
+        </div>
+    </footer>
+
+    <script src="static/script.js"></script>
+
+</body>
+</html>
