@@ -1,0 +1,19 @@
+# ---- 以 Python 為主要語言 ----
+*.py linguist-language=Python
+*.pyw linguist-language=Python
+*.ipynb linguist-language=Python
+
+*.fa linguist-detectable=false
+*.fasta linguist-detectable=false
+*.faa linguist-detectable=false
+*.fna linguist-detectable=false
+data/** linguist-detectable=false
+
+
+assets/** linguist-vendored
+static/** linguist-vendored
+public/** linguist-vendored
+third_party/** linguist-vendored
+vendor/** linguist-vendored
+docs/** linguist-documentation
+examples/** linguist-documentation
