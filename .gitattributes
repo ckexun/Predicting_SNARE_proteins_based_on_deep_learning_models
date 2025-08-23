@@ -9,11 +9,9 @@
 *.fna linguist-detectable=false
 data/** linguist-detectable=false
 
-
-assets/** linguist-vendored
+*.html linguist-vendored
+*.css linguist-vendored
+*.js linguist-vendored
 static/** linguist-vendored
-public/** linguist-vendored
-third_party/** linguist-vendored
-vendor/** linguist-vendored
-docs/** linguist-documentation
-examples/** linguist-documentation
+template/** linguist-vendored
+
