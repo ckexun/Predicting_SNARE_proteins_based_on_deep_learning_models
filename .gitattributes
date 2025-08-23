@@ -3,10 +3,7 @@
 *.pyw linguist-language=Python
 *.ipynb linguist-language=Python
 
-*.fa linguist-detectable=false
 *.fasta linguist-detectable=false
-*.faa linguist-detectable=false
-*.fna linguist-detectable=false
 data/** linguist-detectable=false
 
 *.html linguist-vendored
