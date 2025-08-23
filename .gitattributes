@@ -13,5 +13,5 @@ data/** linguist-detectable=false
 *.css linguist-vendored
 *.js linguist-vendored
 static/** linguist-vendored
-template/** linguist-vendored
+templates/** linguist-vendored
 
